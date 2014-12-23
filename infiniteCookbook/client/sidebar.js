@@ -1,14 +1,7 @@
 //function to jump to template specified in element argument
-var scrollTo = function(element, offset) {
-  var y;
-  if (typeof offset === 'undefined') {
-    y = $(element).offset().top;
-  } else {
-    y = $(element).offset().top + offset;
-    console.log(y);
-  }
+var scrollTo = function(offsetNum) {
   $('.sidebar').animate(
-    { scrollTop: y },
+    { scrollTop: offsetNum },
     { duration: 1000, easing: 'easeInOutCubic' }
   );
 };
@@ -34,10 +27,13 @@ Template.sidebar.events({
 		// console.log('button works!');
 		id = Session.get('recipePageData');
 		console.log(this._id, id);
-		if (typeof id === 'undefined' || id !== this._id) {
+		if (typeof id === 'undefined') {
 			Session.set('recipePageData', this._id);
-			console.log(e.target);
-			scrollTo(e.target);
+			setTimeout(function() {
+				scrollTo($(e.target).offset().top - 10);
+			}, 200);
+		} else if (id !== this._id) {
+			Session.set('recipePageData', this._id);
 		} else if (id === this._id) {
 			Session.set('recipePageData', undefined);
 		}

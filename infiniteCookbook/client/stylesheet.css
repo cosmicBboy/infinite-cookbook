@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*******  splashpage styles  *******/
+.splash-page {
+	height: 100vh;
+	width: 100%;
+	background-image: url("textures/recipe-page-texture.png");
+}
+
+.title-text-splash {
+	font-family: "Josefin Slab";
+	font-size: 40px;
+	font-weight: bold;
+	color: #72533b;
+}
+
+.title-container {
+	list-style-type: none;
+	display: table;
+	position: fixed;
+  position:fixed;
+  transform: translate(-50%, -50%);
+  top:50%;
+  left:50%;
+}
+
+.glyphicon.glyphicon-book {
+	color: #70513a;
+	font-size: 120px;
+	line-height: 100%;
+	padding-left: 30px;
+	cursor: pointer;
+
+  -webkit-transition: color 1s, font-size 1s;
+  -moz-transition: color 1s, font-size 1s;
+  -o-transition: color 1s, font-size 1s;
+  transition: color 1s, font-size 1s;
+}
+
+.glyphicon.glyphicon-book:hover {
+	color: #664935;
+	font-size: 125px;
+  -webkit-transition: color 1s, font-size 1s;
+  -moz-transition: color 1s, font-size 1s;
+  -o-transition: color 1s, font-size 1s;
+  transition: color 1s, font-size 1s;
+}
+
+/*******  sidebar template styles  *******/
+
+.sidebar {
+	/*background-color: #c4a38b;*/
+	background-image: url("textures/side-bar-texture.png");
+  background-size: 100% 100%;
+	width: 400px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	overflow-y: auto;
+
+	-webkit-box-shadow: 4px 2px 29px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 2px 29px -2px rgba(0,0,0,0.75);
+	box-shadow: 4px 2px 29px -2px rgba(0,0,0,0.75);
+}
+
+.title-text {
+	font-family: "Josefin Slab";
+	color: #705847;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: left;
+	margin: 30px 20px;
+	margin-bottom: 0px;
+}
+
+.recipe-list {
+	margin: 20px 20px;
+	font-family: "Open Sans";
+	font-size: 25px;
+	color: #444444;
+}
+
+.btn-group-vertical {
+	padding-left: 20px;
+	width: 93%;
+}
+
+.recipe-item.btn.btn-default {
+	background-color: transparent;
+	font-family: "Open Sans";
+	font-size: 16px;
+	border-color: #aa8f7c;
+	border-width: 2px;
+	height: 50px;
+}
+
+.recipe-item.btn.btn-default:hover {
+	background-color: #aa8f7c;
+}
+
+.ingredients-container {
+	padding: 10px 20px;
+	background-color: #9b8474;
+	font-family: "Open Sans";
+	color: #444444;
+	/*text-align: center;*/
+	/*opacity: 0.5;*/
+}
+
+.ingredients-header {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 15px;
+}
+
+.ingredients-list {
+	text-align: left;
+	list-style-type: square;
+	padding-left: 20px;
+	/*margin-top: 10px;*/
+}
+
+.ingredients-item {
+	padding-bottom: 8px;
+	line-height: 15px;
+	font-size: 14px;
+}
+
+/*******  recipe page styles  *******/
+
+.recipe-page {
+	margin-left: 400px;
+	height: 100vh;
+	background-image: url("textures/recipe-page-texture.png");
+}
+
+.cooking-pot {
+	width: 250px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(35%, -50%);
+	opacity: 0.4;
+}
+
+.recipe-video.embed-responsive.embed-responsive-16by9 {
+	height: 100%;
+}

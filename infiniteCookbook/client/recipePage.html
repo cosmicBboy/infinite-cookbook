@@ -1,0 +1,11 @@
+<template name="recipePage">
+	<div class="recipe-page">
+		{{#if showRecipe}}
+		<div class="recipe-video embed-responsive embed-responsive-16by9">
+			<iframe class="embed_responsive-item" src="{{getVideoUrl}}"></iframe>
+		</div>
+		{{else}}
+		<img class="cooking-pot" src="icons/cookingpot.png"/>
+		{{/if}}
+	</div>
+</template>

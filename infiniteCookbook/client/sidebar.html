@@ -1,0 +1,34 @@
+<template name="sidebar">
+	<div class="sidebar">
+
+		<!-- text title -->
+		<div class="title-text">
+			M&amp;M's<br>Infinite<br>Cookbook
+		</div>
+
+		<!-- recipe list -->
+		<div class="recipe-list">
+			Recipes
+		</div>
+
+		<ul class="btn-group-vertical">
+			{{#each recipeList}}
+			<button type="button" href="#" class="recipe-item btn btn-default" data-id="{{_id}}" title="{{title}}">{{title}}</button>
+
+			<!-- ingredients -->
+			{{#if showThisRecipe}}
+				<div class="ingredients-container">
+					<div class="ingredients-header">Ingredients</div>
+					<ul class="ingredients-list">
+						{{#each ingredientsList}}
+							<li class="ingredients-item">{{.}}</li>
+						{{/each}}
+					</ul>
+				</div>
+			{{/if}}
+
+			{{/each}}
+		</ul>
+
+	</div>
+</template>

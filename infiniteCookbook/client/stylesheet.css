@@ -61,7 +61,7 @@ html, body {
   background-size: 100% 100%;
 	width: 400px;
 	height: 100%;
-	min-height: 700px;
+	min-height: 600px;
 	display: block;
 	position: absolute;
 	overflow-y: auto;
@@ -139,6 +139,7 @@ html, body {
 .recipe-page {
 	margin-left: 400px;
 	height: 100vh;
+	min-height: 600px;
 	background-image: url("textures/recipe-page-texture.png");
 }
 
@@ -153,5 +154,5 @@ html, body {
 
 .recipe-video.embed-responsive.embed-responsive-16by9 {
 	height: 100%;
-	min-height: 700px;
+	min-height: 600px;
 }

@@ -7,7 +7,7 @@ var scrollTo = function(offsetNum) {
 };
 
 //declare id variable for recipe data to show on page
-var id;
+var id, btmPadding, scrollStop;
 
 Template.sidebar.helpers({
 	recipeList: function() {
@@ -29,13 +29,20 @@ Template.sidebar.events({
 		console.log(this._id, id);
 		if (typeof id === 'undefined') {
 			Session.set('recipePageData', this._id);
-			setTimeout(function() {
-				scrollTo($(e.target).offset().top - 10);
-			}, 200);
+			if ( $('.title-text').offset().top > 0) {
+				setTimeout(function() {
+					scrollTo($(e.target).offset().top - 10);
+				}, 200);
+			}
 		} else if (id !== this._id) {
 			Session.set('recipePageData', this._id);
 		} else if (id === this._id) {
-			Session.set('recipePageData', undefined);
+			//scroll back to top
+			// scrollTo(0);
+			console.log($('.ingredients-container').height());
+			btmPadding = $('.ingredients-container').height();
+			$('ul.btn-group-vertical').css('padding-bottom', btmPadding)
+			Session.set('recipePageData', undefined);	
 		}
 	}
 });

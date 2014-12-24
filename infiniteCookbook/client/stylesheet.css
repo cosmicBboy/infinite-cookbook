@@ -38,19 +38,18 @@ html, body {
 	padding-left: 30px;
 	cursor: pointer;
 
-  -webkit-transition: color 1s, font-size 1s;
-  -moz-transition: color 1s, font-size 1s;
-  -o-transition: color 1s, font-size 1s;
-  transition: color 1s, font-size 1s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .glyphicon.glyphicon-book:hover {
-	color: #664935;
-	font-size: 125px;
-  -webkit-transition: color 1s, font-size 1s;
-  -moz-transition: color 1s, font-size 1s;
-  -o-transition: color 1s, font-size 1s;
-  transition: color 1s, font-size 1s;
+	color: #493527;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 /*******  sidebar template styles  *******/

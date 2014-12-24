@@ -3,7 +3,7 @@
 
 		<!-- text title -->
 		<div class="title-text">
-			M&amp;M's<br>Infinite<br>Cookbook
+			M&amp;M's Infinite Cookbook
 		</div>
 
 		<!-- recipe list -->
@@ -19,11 +19,14 @@
 			{{#if showThisRecipe}}
 				<div class="ingredients-container">
 					<div class="ingredients-header">Ingredients</div>
-					<ul class="ingredients-list">
+					<table class="ingredients-list">
 						{{#each ingredientsList}}
-							<li class="ingredients-item">{{.}}</li>
+						<tr class='ingredients-row'>
+							<td><input type="checkbox"></td>
+							<td class="ingredients-item">{{.}}</td>
+						</tr>
 						{{/each}}
-					</ul>
+					</table>
 				</div>
 			{{/if}}
 

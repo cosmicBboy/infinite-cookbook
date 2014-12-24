@@ -65,33 +65,37 @@ html, body {
 	display: block;
 	position: absolute;
 	/*overflow-y: auto;*/
-	overflow: scroll;
+	overflow: hidden;
 
-	-webkit-box-shadow: 4px 2px 29px -2px rgba(0,0,0,0.75);
+/*	-webkit-box-shadow: 4px 2px 29px -2px rgba(0,0,0,0.75);
 	-moz-box-shadow: 4px 2px 29px -2px rgba(0,0,0,0.75);
-	box-shadow: 4px 2px 29px -2px rgba(0,0,0,0.75);
+	box-shadow: 4px 2px 29px -2px rgba(0,0,0,0.75);*/
 }
 
 .title-text {
 	font-family: "Josefin Slab";
 	color: #705847;
-	font-size: 35px;
+	font-size: 28px;
 	font-weight: bold;
 	text-align: left;
 	margin: 30px 20px;
 	margin-bottom: 0px;
+	text-align: center;
 }
 
 .recipe-list {
-	margin: 20px 20px;
+	margin: 10px 10px;
 	font-family: "Open Sans";
-	font-size: 25px;
+	font-size: 20px;
 	color: #444444;
+	text-align: center;
 }
 
 .btn-group-vertical {
 	padding-left: 20px;
 	width: 93%;
+  /*set height of recipe list to fit page*/
+	height: calc(100% - 145px);
 }
 
 .recipe-item.btn.btn-default {
@@ -112,6 +116,10 @@ html, body {
 	background-color: #9b8474;
 	font-family: "Open Sans";
 	color: #444444;
+	overflow: scroll;
+	height: 70%;
+	/*display: none;*/
+
 	/*text-align: center;*/
 	/*opacity: 0.5;*/
 }
@@ -119,20 +127,26 @@ html, body {
 .ingredients-header {
 	font-size: 20px;
 	font-weight: bold;
-	margin: 15px;
+	margin: 10px 0 10px 0;
 }
 
 .ingredients-list {
 	text-align: left;
-	list-style-type: square;
-	padding-left: 20px;
+	padding-left: 10px;
+	list-style-type: none;
 	/*margin-top: 10px;*/
 }
 
 .ingredients-item {
-	padding-bottom: 8px;
+	padding-bottom: 10px;
+	padding-left: 10px;
 	line-height: 15px;
 	font-size: 14px;
+}
+
+input[type="checkbox"] {
+	font-size: 50px;
+	margin-bottom: 15px;
 }
 
 /*ul.btn-group-vertical {

@@ -13,7 +13,7 @@
 
 		<ul class="btn-group-vertical">
 			{{#each recipeList}}
-			<button type="button" href="#" class="recipe-item btn btn-default" data-id="{{_id}}" title="{{title}}">{{title}}</button>
+			<button type="button" href="#" class="recipe-item btn btn-default {{#if showThisRecipe}}recipe-show{{/if}}" data-id="{{_id}}" title="{{title}}">{{title}}</button>
 
 			<!-- ingredients -->
 			{{#if showThisRecipe}}

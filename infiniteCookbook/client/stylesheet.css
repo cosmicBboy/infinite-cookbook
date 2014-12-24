@@ -111,6 +111,10 @@ html, body {
 	background-color: #aa8f7c;
 }
 
+.recipe-item.btn.btn-default.recipe-show {
+	background-color: #aa8f7c;
+}
+
 .ingredients-container {
 	padding: 10px 20px;
 	background-color: #9b8474;

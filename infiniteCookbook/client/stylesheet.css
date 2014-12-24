@@ -18,7 +18,8 @@ html, body {
 	font-family: "Josefin Slab";
 	font-size: 40px;
 	font-weight: bold;
-	color: #72533b;
+	color: #333333;
+	text-align: center;
 }
 
 .title-container {
@@ -32,32 +33,32 @@ html, body {
 }
 
 .glyphicon.glyphicon-book {
-	color: #70513a;
+	color: #333333;
 	font-size: 120px;
 	line-height: 100%;
+	padding-top: 20px;
 	padding-left: 30px;
 	cursor: pointer;
 
-  -webkit-transition: color 1s, font-size 1s;
-  -moz-transition: color 1s, font-size 1s;
-  -o-transition: color 1s, font-size 1s;
-  transition: color 1s, font-size 1s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .glyphicon.glyphicon-book:hover {
-	color: #664935;
-	font-size: 125px;
-  -webkit-transition: color 1s, font-size 1s;
-  -moz-transition: color 1s, font-size 1s;
-  -o-transition: color 1s, font-size 1s;
-  transition: color 1s, font-size 1s;
+	color: #606060;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 /*******  sidebar template styles  *******/
 
 .sidebar {
 	/*background-color: #c4a38b;*/
-	background-image: url("textures/side-bar-texture.png");
+	background-image: url("textures/dark-blue-texture.png");
   background-size: 100% 100%;
 	width: 400px;
 	height: 100%;
@@ -74,7 +75,7 @@ html, body {
 
 .title-text {
 	font-family: "Josefin Slab";
-	color: #705847;
+	color: #efefef;
 	font-size: 28px;
 	font-weight: bold;
 	text-align: left;
@@ -87,7 +88,7 @@ html, body {
 	margin: 10px 10px;
 	font-family: "Open Sans";
 	font-size: 20px;
-	color: #444444;
+	color: #213035;
 	text-align: center;
 }
 
@@ -102,18 +103,35 @@ html, body {
 	background-color: transparent;
 	font-family: "Open Sans";
 	font-size: 16px;
-	border-color: #aa8f7c;
+	color: #90a9b2;
+	border-color: #7c939b;
 	border-width: 2px;
 	height: 50px;
+
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .recipe-item.btn.btn-default:hover {
-	background-color: #aa8f7c;
+	background-color: #7c939b;
+	color: #213035;
+
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.recipe-item.btn.btn-default.recipe-show {
+	background-color: #7c939b;
+	color: #213035;
 }
 
 .ingredients-container {
 	padding: 10px 20px;
-	background-color: #9b8474;
+	background-color: #8ea6ad;
 	font-family: "Open Sans";
 	color: #444444;
 	overflow: scroll;

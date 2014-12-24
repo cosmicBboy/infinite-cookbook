@@ -29,7 +29,6 @@ Template.sidebar.events({
 		console.log(this._id, id);
 		if (typeof id === 'undefined') {
 			Session.set('recipePageData', this._id);
-
 		} else if (id !== this._id) {
 			Session.set('recipePageData', this._id);
 		} else if (id === this._id) {
